@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\hp\Desktop\gg\spam_ham_ML_flask\static\styles.css">
+</head>
+<style>
+body {
+	background-image: url('https://s3-alpha.figma.com/hub/file/2930455202/d023f1c3-5378-47f8-8e70-7438f65c4502-cover.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+  </style>
+<body>
+<center>
+	<header>
+		<div class="container">
+		<h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><center>Spam Detector For SMS Messages</h2>
+		
+	</div>
+	</header>
+</center>
+
+<center>
+	<br><br><br><br>	
+	{% if prediction == 1%}
+	<h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 80px;">It is a Spam</h2>
+
+	{% elif prediction == 0%}
+	<p><br><br><br><br><p>
+	<h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 80px;">It is a Ham</h2>
+	{% endif %}
+
+	</div>
+</center>
+</body>
+</html>

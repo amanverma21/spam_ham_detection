@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spam Detector</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+	body {
+	  background-image: url('https://s3-alpha.figma.com/hub/file/2930455202/d023f1c3-5378-47f8-8e70-7438f65c4502-cover.png');
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: cover;
+	  
+	}
+</style>
+<body>
+	<center>
+	<header>
+		<div class="container">
+		<h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><center>Spam Detector For SMS Messages</h2>
+	</div>
+	</header>
+	<div class="ml-container">
+		<form action="{{ url_for('predict')}}" method="POST">
+		<p><h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Enter Your Message Here</p>
+		<textarea name="message" rows="4" cols="50"></textarea>
+		<br/>
+		<input type="submit" class="btn-info" value="Predict" style; ">
+	</form>		
+	</div>
+	</center>
+</body>
+</html>
