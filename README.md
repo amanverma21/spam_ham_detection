@@ -17,8 +17,7 @@ This will start the Flask application on http://localhost:5000/.
 
 
 # Usage
-Once the Flask application is running, you can access the home page by visiting http://localhost:5000/. Here, you can upload a CSV file containing years of experience data and get predictions for the corresponding salaries.
-
+Once the Flask application is running, you can access the home page by visiting http://localhost:5000/. Here, you can write a message in the field box.
 # Model
 The machine learning model used in this project is a Naive Bayes Classifier model that predicts whether the message is spam or ham. The model is trained on the Spam.csv dataset, which contains messages tagged as spam/ham.
 
